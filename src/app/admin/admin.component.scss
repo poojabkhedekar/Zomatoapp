@@ -1,0 +1,25 @@
+.firstDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  width: 50%;
+}
+.firstmat {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: blue;
+}
+// .img {
+//   background-image: url(../../assets/images/Zomato.png);
+//   background-repeat: no-repeat;
+//   height: max-content;
+//   width: max-content;
+// }
+.btn {
+  width: 300px;
+  margin-left: 500px;
+}
