@@ -11,8 +11,17 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatButtonModule } from '@angular/material/button';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HotelComponent } from './hotel/hotel.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 @NgModule({
-  declarations: [AppComponent, AdminComponent],
+  declarations: [
+    AppComponent,
+    AdminComponent,
+    HotelComponent,
+    DashboardComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,6 +32,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatDatepickerModule,
     MatButtonModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

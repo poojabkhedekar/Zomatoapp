@@ -1,0 +1,35 @@
+.input {
+  height: 62px;
+  width: 270px;
+  margin-left: 500px;
+}
+.btn {
+  width: 200px;
+  margin-left: 60px;
+}
+.btn:hover {
+  background-color: green !important;
+}
+.btnnonveg {
+  width: 200px;
+  margin-left: 200px;
+}
+.btnnonveg:hover {
+  background-color: red !important;
+}
+.btnvegan {
+  width: 200px;
+  margin-left: 200px;
+}
+.btnvegan:hover {
+  background-color: yellow !important;
+}
+mat-carousel {
+  max-width: 800px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
