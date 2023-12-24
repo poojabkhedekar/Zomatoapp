@@ -8,14 +8,19 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AdminComponent {
   adminForm: FormGroup;
+
   constructor(private fb: FormBuilder) {
     this.adminForm = fb.group({
+      hotelId: ['', Validators.required],
       hotelName: ['', Validators.required],
-      category: ['', Validators.required],
-      menu: ['', Validators.required],
       cuisines: ['', Validators.required],
-      rating: ['', Validators.required],
+      category: ['', Validators.required],
+      location: ['', Validators.required],
+      time: ['', Validators.required],
+      type: ['', Validators.required],
       price: ['', Validators.required],
+      description: ['', Validators.required],
     });
   }
+  submit() {}
 }
