@@ -14,13 +14,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HotelComponent } from './hotel/hotel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { LoginzomatoComponent } from './loginzomato/loginzomato.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     HotelComponent,
     DashboardComponent,
+    LoginzomatoComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatFormFieldModule,
     MatDatepickerModule,
     MatButtonModule,
+    MatIconModule,
     ReactiveFormsModule,
   ],
   providers: [],
