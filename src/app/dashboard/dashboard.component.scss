@@ -8,21 +8,21 @@
   margin-left: 60px;
 }
 .btn:hover {
-  background-color: green !important;
+  background-color: rgb(177, 243, 177) !important;
 }
 .btnnonveg {
   width: 200px;
   margin-left: 200px;
 }
 .btnnonveg:hover {
-  background-color: red !important;
+  background-color: indianred !important;
 }
 .btnvegan {
   width: 200px;
   margin-left: 200px;
 }
 .btnvegan:hover {
-  background-color: yellow !important;
+  background-color: lightgreen !important;
 }
 mat-carousel {
   max-width: 800px;
@@ -32,4 +32,7 @@ mat-carousel {
 img {
   width: 100%;
   height: auto;
+}
+.mat {
+  background-image: url(../../assets/images/hotelimage.jpeg);
 }

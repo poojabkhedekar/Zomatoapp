@@ -1,0 +1,33 @@
+<p>registration works!</p>
+<form [formGroup]="registerForm">
+  <mat-card class="mat">
+    <h2 style="color: blue">Registration Page</h2>
+    <mat-label>Username</mat-label>
+    <mat-form-field class="formfield">
+      <input matInput type="text" placeholder="UserName" />
+    </mat-form-field>
+    <mat-label>Password</mat-label>
+    <mat-form-field class="formfield">
+      <input matInput type="password" placeholder="Password" />
+    </mat-form-field>
+    <mat-label>ConfirmPassword</mat-label>
+    <mat-form-field class="formfield">
+      <input matInput type="password" placeholder="ConfirmPassword" />
+    </mat-form-field>
+    <mat-label>Address</mat-label>
+    <mat-form-field class="formfield">
+      <input matInput type="text" placeholder="Address" />
+    </mat-form-field>
+    <mat-label>Email</mat-label>
+    <mat-form-field class="formfield">
+      <input matInput type="text" placeholder="EmailId" />
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="primary"
+      style="width: 200px; margin-left: 530px"
+    >
+      Registration
+    </button>
+  </mat-card>
+</form>

@@ -1,0 +1,28 @@
+<form [formGroup]="loginForm">
+  <mat-card class="mat">
+    <h2 style="color: blue">Login Page</h2>
+    <mat-label>Username</mat-label>
+    <mat-form-field class="formfield">
+      <input matInput type="text" placeholder="UserName" />
+    </mat-form-field>
+    <mat-label>Password</mat-label>
+    <mat-form-field class="formfield">
+      <input
+        matInput
+        [type]="show ? 'text' : 'password'"
+        placeholder="Password"
+        name="password"
+      />
+      <mat-icon (click)="eyeClick()" class="eye">{{
+        show ? "visibility" : "visibility_off"
+      }}</mat-icon>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="primary"
+      style="width: 200px; margin-left: 530px"
+    >
+      Login
+    </button>
+  </mat-card>
+</form>
