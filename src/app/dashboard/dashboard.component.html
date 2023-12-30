@@ -12,4 +12,27 @@
       <button mat-raised-button class="btnvegan">Vegan</button>
     </div>
   </mat-card>
+  <div class="hoteldata">
+    <mat-card *ngFor="let item of hotelsDetails">
+      <div class="divhotels">
+        <img
+          src="../../assets/images/{{ item.name }}.jpeg"
+          height="200px"
+          width="300px"
+        />
+        <p>
+          <b style="font-size: 22px; margin-left: 10px">{{ item.name }}</b>
+          <b style="font-size: 15px; margin-left: 70px">{{ item.location }}</b>
+        </p>
+        <p>
+          <b style="font-size: 18px; margin-left: 10px">{{ item.type }}</b>
+          <b
+            style="font-size: 15px; margin-left: 70px; background-color: bisque"
+            >{{ item.cuisines }}</b
+          >
+        </p>
+        <p style="font-size: 15px; margin-left: 50px">Timing:{{ item.time }}</p>
+      </div>
+    </mat-card>
+  </div>
 </div>
