@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ZomatoService } from '../zomato.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
-  slides = [
-    { image: 'path/to/image1.jpg', alt: 'Image 1' },
-    { image: 'path/to/image2.jpg', alt: 'Image 2' },
-    { image: 'path/to/image3.jpg', alt: 'Image 3' },
-    // Add more slides as needed
-  ];
+  hotelsDetails: any;
+  constructor(private service: ZomatoService) {}
+  ngOnInit() {
+    this.service.getHotelInfo().subscribe(
+      (res: any) => {
+        this.hotelsDetails = res.data;
+        console.log('hoteldetails', res);
+      },
+      (error) => {
+        console.log('hoteldetails', error);
+      }
+    );
+  }
 }

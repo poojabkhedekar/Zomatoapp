@@ -1,50 +1,35 @@
-<!-- <p>hotel works!</p>
 <div>
+  <!-- <img src="../../assets/images/Zomato.png" height="100px" width="33%" />
   <img src="../../assets/images/Zomato.png" height="100px" width="33%" />
-  <img src="../../assets/images/Zomato.png" height="100px" width="33%" />
-  <img src="../../assets/images/Zomato.png" height="100px" width="33%" />
-
-  <h1 style="text-align: center; color: blue"><u>Hotels Details</u></h1>
-  <mat-card class="firstmat">
-    <div class="firstDiv">
-      <mat-label>Hotel Id:</mat-label>
-      <mat-form-field>
-        <input />
-      </mat-form-field>
-      <mat-label>HotelName</mat-label>
-      <mat-form-field>
-        <mat-select>
-          <mat-option></mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-label>Cuisines</mat-label>
-      <mat-form-field>
-        <mat-select>
-          <mat-option></mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-label>Time</mat-label>
-      <mat-form-field>
-        <mat-select>
-          <mat-option></mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-    <!-- <div class="firstDiv">
-      <mat-label>Cuisines</mat-label>
-      <mat-form-field>
-        <mat-select>
-          <mat-option></mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-label>Description</mat-label>
-      <mat-form-field>
-        <input matInput type="text" />
-      </mat-form-field>
-      <mat-label>Price</mat-label>
-      <mat-form-field> <input matInput type="text" /> </mat-form-field>
-    </div> -->
-<!-- </mat-card>
-  <button mat-raised-button class="btn" color="primary">Submit</button>
-</div> -->
--->
+  <img src="../../assets/images/Zomato.png" height="100px" width="33%" /> -->
+  <form [formGroup]="hotelForm">
+    <h1 style="text-align: center; color: blue"><u> Add Hotels Details</u></h1>
+    <mat-card class="firstmat">
+      <div class="firstDiv">
+        <mat-label>HotelName</mat-label>
+        <mat-form-field>
+          <input matInput type="text" formControlName="name" />
+        </mat-form-field>
+        <mat-label>Cuisines</mat-label>
+        <mat-form-field>
+          <input matInput type="text" formControlName="cuisines" />
+        </mat-form-field>
+        <mat-label>Type</mat-label>
+        <mat-form-field>
+          <input matInput type="text" formControlName="type" />
+        </mat-form-field>
+        <mat-label>Location</mat-label>
+        <mat-form-field>
+          <input matInput type="text" formControlName="location" />
+        </mat-form-field>
+        <mat-label>Time</mat-label>
+        <mat-form-field>
+          <input matInput type="text" formControlName="time" />
+        </mat-form-field>
+      </div>
+    </mat-card>
+    <button mat-raised-button class="btn" color="primary" (click)="submit()">
+      Submit
+    </button>
+  </form>
+</div>
